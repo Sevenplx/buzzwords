@@ -7,81 +7,81 @@
 The process of quickly sorting through problems to decide which ones are the most urgent.
 
 **In Cybersecurity:**  
-In the first 20 minutes, don't try to fix everything. Triage the situation:
+In the first moments of an incident, don't try to fix everything. Triage the situation:
 - What is the biggest threat?
-- Is the hacker still inside?
+- Is the attacker still inside?
 - Is data currently leaking?
 
-Fix the "bleeding" first.
+Fix the most critical issues first.
 
 ---
 
 ## 2. CIA Triad (The "Core Goals" of Security)
 
-This is the gold standard for explaining impact. Every hack breaks at least one of these:
+This is the gold standard for explaining impact. Every incident affects at least one of these:
 
-- **Confidentiality:** Keeping secrets  
-  *(Did they see private student files?)*
+- **Confidentiality:** Keeping data private  
+  *(Was sensitive information exposed?)*
 
 - **Integrity:** Keeping data accurate  
-  *(Did they change grades or financial records?)*
+  *(Was data altered or tampered with?)*
 
-- **Availability:** Keeping systems running  
-  *(Did they crash the school website or Wi-Fi?)*
+- **Availability:** Keeping systems accessible  
+  *(Were systems disrupted or taken offline?)*
 
-**Note for Judges:**  
-> "Our impact assessment shows a total loss of Integrity because grades were modified."
+**Example Statement:**  
+> "Our assessment shows a loss of Integrity because data was modified."
 
 ---
 
 ## 3. The "Castle" Model
 
 **Definition:**  
-An older security strategy where you focus all your defense on the "outside" (the walls), assuming everyone inside the castle is trustworthy.
+An older security approach where defenses focus mainly on the outer boundary, assuming internal users are trustworthy.
 
 **The Flaw:**  
-If a hacker gets past the front gate (e.g., stolen password), they have total *free rein* inside.
+If an attacker gets past the perimeter (e.g., via stolen credentials), they can move freely inside.
 
-**The "Smart" Point:**  
-> "The school relied on a 'Castle' model, which is why the hacker moved so easily once they were inside."
+**Key Insight:**  
+> "A perimeter-focused model increases risk if internal access is not controlled."
 
 ---
 
 ## 4. Defense-in-Depth (The "Layer Cake")
 
 **Definition:**  
-The modern version of the Castle. Instead of one big wall, you have multiple layers of security.
+A layered security approach using multiple controls at different levels.
 
 **The Logic:**  
-If one layer fails (e.g., a teacher clicks a bad link), the next layer (e.g., antivirus or MFA) catches it.
+If one layer fails (e.g., a phishing attack succeeds), other layers (e.g., endpoint protection, MFA) help stop the threat.
 
-It assumes failure will happen.
+It assumes that failures can happen and prepares for them.
 
 ---
 
 ## 5. Moat and Perimeter
 
 - **Perimeter:**  
-  The digital boundary between the school's private network and the public Internet.
+  The boundary between a private network and external networks (e.g., the internet).
 
 - **Moat:**  
-  Tools like firewalls or email filters that sit on the perimeter. They block suspicious traffic before it reaches systems.
+  Security controls such as firewalls, intrusion detection systems, or email filters that protect the perimeter.
 
-**The Fix:**  
-> "We need to strengthen the perimeter by blocking all traffic from non-local IP addresses."
+**Improvement Idea:**  
+> "Strengthen perimeter defenses by restricting unnecessary external access."
 
 ---
 
 ## 6. Segmentation (The "Fire Doors")
 
 **Definition:**  
-Dividing a large network into smaller, isolated sections.
+Dividing a network into smaller, isolated sections.
 
 **The Logic:**  
-If a fire starts in one area, fire doors prevent it from spreading.
+If a breach occurs in one segment, it should not spread to others.
 
 **In Cybersecurity:**  
-If a student hacks the Library Wi-Fi, they should not be able to access the Principal’s computer.
+Access between systems should be limited based on need.
 
-**The "Smart" Point:**  
-> "We recommend network segmentation so that a breach in the student Wi-Fi stays contained and cannot reach the grade database."
+**Key Insight:**  
+> "Network segmentation helps contain breaches and reduces overall impact."
